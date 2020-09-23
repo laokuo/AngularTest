@@ -1,0 +1,55 @@
+<br>
+<p>测试响应式表单</p>
+<hr>
+Name:
+<input type="text" [formControl]="name">
+<p>Value:{{name.value}}</p>
+<button (click)="updateName()">修改表单内容</button>
+
+
+<hr>
+<form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+
+  <label>
+    First Name:
+    <input type="text" formControlName="firstName" required>
+<!--    怎么获取值呢？-->
+  </label>
+
+  <label>
+    Last Name:
+    <input type="text" formControlName="lastName">
+  </label>
+
+  <div formGroupName="address">
+    <h3>Address</h3>
+
+    <label>
+      Street:
+      <input type="text" formControlName="street">
+    </label>
+
+    <label>
+      City:
+      <input type="text" formControlName="city">
+    </label>
+
+    <label>
+      State:
+      <input type="text" formControlName="state">
+    </label>
+
+    <label>
+      Zip Code:
+      <input type="text" formControlName="zip">
+    </label>
+    <p>
+      Form Status: {{ profileForm.status }}
+    </p>
+  </div>
+  <button type="submit" [disabled]="!profileForm.valid">Submit</button>
+</form>
+<p>
+  <button (click)="updateProfile()">Update Profile</button>
+</p>
+

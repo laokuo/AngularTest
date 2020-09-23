@@ -1,0 +1,17 @@
+<p>测试dollar符event</p>
+example1:
+<input (keyup)="onKey1($event)">
+{{this.value1}}
+<br>
+{{this.type1}}
+<br>
+example2:
+<input #box (keyup)="onKey2(box.value)">
+{{this.value2}}
+<br>
+<br>
+example3:
+<input #box3 (keyup.enter)="onEnter(box3.value)">
+{{this.value3}}
+<br>
+<br>
