@@ -26,8 +26,7 @@ import { Component, OnInit } from '@angular/core';
       </div>
       <button [disabled]="myForm.invalid">hello world</button>
     </form>
-
-    <!--表单进行双向绑定的时候必须要有name属性,双向绑定才能用#来验证自身有效性,双向绑定不用井号form就能验证其中的有效性-->
+    <!--表单进行双向绑定的时候必须要有name属性,双向绑定才能用#来验证自身有效性。不用双向绑定，井号form就能验证其中的有效性-->
 
     <br>
     <br>
@@ -42,9 +41,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TestCheckComponent implements OnInit {
   name:string;
+
   constructor() { }
 
   ngOnInit(): void {
+
   }
 
 }
+

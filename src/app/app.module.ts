@@ -9,6 +9,13 @@ import { TestInterfaceComponent } from './test-interface/test-interface.componen
 import { TestReactiveFormComponent } from './test-reactive-form/test-reactive-form.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { TestCheckComponent } from './test-check/test-check.component';
+import { TestDialogComponent } from './test-dialog/test-dialog.component';
+import { TestBootsrapComponent } from './test-bootsrap/test-bootsrap.component';
+import { TestViewChildComponent } from './test-view-child/test-view-child.component';
+import { SonComponent } from './son/son.component';
+import { HighlightDirective } from './highlight.directive';
+import { NoBlankDirective } from './no-blank.directive';
+import { TestDataComponent } from './test-data/test-data.component';
 
 
 
@@ -21,7 +28,14 @@ import { TestCheckComponent } from './test-check/test-check.component';
     TestComponent,
     TestInterfaceComponent,
     TestReactiveFormComponent,
-    TestCheckComponent
+    TestCheckComponent,
+    TestDialogComponent,
+    TestBootsrapComponent,
+    TestViewChildComponent,
+    SonComponent,
+    HighlightDirective,
+    NoBlankDirective,
+    TestDataComponent,
    ],
     imports: [
         BrowserModule,
